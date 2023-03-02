@@ -105,3 +105,96 @@ main {
     font-weight: bold;
     font-size: large;
 }
+
+@media screen and (max-width: 640px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header nav ul {
+        display: block;
+    }
+    
+    header nav ul li {
+        margin-bottom: 5px;
+    }
+
+    #sobre-a-loja {
+        display: block;
+    }
+
+    .sobre {
+        margin-left: 0;
+    }
+
+    #sobre-a-loja img {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .lista-produtos {
+        display: block;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .produto {
+        margin-bottom: 32px;
+    }
+
+    .lista-produtos img {
+        width: 100%;
+    }
+
+    .copy {
+        width: 50%;
+    }
+
+    .direitos {
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    #sobre-a-loja {
+        display: block;
+    }
+
+    #sobre-a-loja img {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .sobre {
+        margin-left: 0;
+    }
+
+    .lista-produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+        row-gap: 5%;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .produto h2 {
+        margin: 8px 0 32px 0;
+    }
+
+    .lista-produtos img {
+        width: 100%;
+    }
+
+    .copy {
+        width: 50%;
+    }
+
+    .direitos {
+        text-align: right;
+    }
+}
